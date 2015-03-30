@@ -1,0 +1,387 @@
+body {
+    align: center;
+}
+
+.nav a {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 10px;
+    text-transform: uppercase;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav {
+    widows: inherit;
+    alignment: center;
+    opacity: 0.4;
+    background-color: #3b3b3b;
+}
+
+.row {
+    width: inherit;
+    padding-bottom: 0px;
+}
+
+.jumbotron .container {
+    position: inherit;
+    alignment: center;
+    top: 0px;
+    left: 0px;
+}
+
+.pull-right {
+    align: right;
+}
+
+.slider {
+    position: fixed;
+    alignment: center;
+    width: 100%;
+    height: 950px;
+    top: 0px;
+}
+
+.slide {
+    display: none;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 1600px;
+}
+
+.subSlideContainer {
+    padding: 0px 0px 0px 0px;
+}
+
+.subSlide {
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+.active-slide {
+    display: block;
+}
+
+.active-suBslide {
+    display: block;
+}
+
+/*Pages*/
+
+#habitaciones {
+    background-image:url('http://imagizer.imageshack.us/a/img538/3939/jMBrid.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position-y: -170px;
+}
+
+#sum {
+    background-image:url('http://imagizer.imageshack.us/a/img540/1671/ZJfQQ6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#ubicacion {
+    background-image:url('http://imagizer.imageshack.us/a/img537/4775/4Yv10i.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#contacto {
+    background-image:url('http://imagizer.imageshack.us/a/img537/1778/fkw9yh.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#home {
+    height: 100%;
+    background-image: url('http://imagizer.imageshack.us/a/img912/6391/QG2QGo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -100px;
+}
+
+#servicios {
+    height: 100%;
+    background-image: url('http://imagizer.imageshack.us/a/img540/6527/umHChw.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -100px;
+}
+
+#clientes {
+    height: 100%;
+    background-image: url('http://imagizer.imageshack.us/a/img912/6391/QG2QGo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -100px;
+}
+
+#menu {
+    border-bottom: solid #ffffff 1px;
+    border-top: solid #ffffff 1px;
+}
+
+.row h1 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 100;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    border: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0px;
+}
+
+.row h3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Pinyon Script', cursive;
+    text-align: center;
+    border: none;
+    padding-bottom: 20px;
+    margin: 0px;
+}
+
+
+/*Slider*/
+
+.slider-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.arrow-prev {
+    margin-right: 45px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 9px;
+}
+
+.arrow-next {
+    margin-left: 45px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 9px;
+}
+
+.slider-dots {
+    list-style: none;
+    display: inline-block;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.slider-dots li {
+    color: #bbbcbc;
+    display: inline;
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.slider-dots li.active-dot {
+    color: #363636;
+}
+
+/* Home */
+
+.jumbotron table {
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+.jumbotron tr {
+    margin: 0px 0px 0px 0px;
+    border: none;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+}
+
+.jumbotron td {
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    top: 0px;
+    border: none;
+    margin: 0px 0px 0px 0px;
+    height: 100%;
+}
+
+.jumbotron {
+    padding-top: 0px;
+    background-color: #FFFFFF;
+}
+
+.contenido {
+    height: 400px;
+    width: 380px;
+    background-color: #bbbcbc;
+    opacity: 0.55;
+    position: absolute;
+    top: 210px;
+    left: 740px;
+}
+
+.contenidoSum {
+    width: 550px;
+    height: 270px;
+    background-color: #bbbcbc;
+    opacity: 0.5;
+    position: absolute;
+    top: 310px;
+    left: 680px;
+}
+
+.contenidoSum p {
+    font-size: 16px;
+    color: #381616;
+    text-align: center;
+    text-decoration: solid;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contenidoHabitaciones {
+    width: 950px;
+    height: 380px;
+    background-color: #bbbcbc;
+    opacity: 0.5;
+    position: absolute;
+    top: 210px;
+    left: 210px;
+}
+
+.contenidoUbicacion {
+    background-size: contain;
+    opacity: 1;
+    position: relative;
+    horiz-align: center;
+    vertical-align: middle;
+}
+
+#descripcionDeHabitacion {
+    font-size: 12px;
+    font-weight: 100;
+    color: #381616;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: inherit;
+    overflow: visible;
+}
+
+.habitacionesImagenes {
+    width: 60%;
+    height: 90%;
+    opacity: 1;
+}
+
+.contenidoHabitaciones div {
+    display: inline;
+    top: 0;
+    left: 0;
+    float: left;
+}
+
+.habitacionesMenu {
+    width: 10%;
+    height: 100%;
+    padding: 0px;
+}
+
+.habitacionesDescripcion p {
+    overflow: scroll;
+}
+
+.habitacionesMenu ul {
+    padding-left: 20px;
+    height: inherit;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: inherit;
+    text-align: center;
+}
+
+.contenidoHabitaciones li {
+    display: block;
+    height: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.last {
+    /*border-top: solid 1px #381616;*/
+}
+
+.contenidoHabitaciones a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Calibri", sans-serif;
+    color: #381616;
+    text-align: center;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    display: none;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.active-image {
+    display: inline-block;
+}
+
+.habitacionesDescripcion {
+    width: 30%;
+}
+
+.fields {
+    display: block;
+    margin: 25px;
+    width: 87%;
+    resize: none;
+}
+
+.btn {
+    display: block;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 87%;
+}
+
+.footer {
+    color: #ffffff;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 45px;
+    padding-top: 10px;
+    text-decoration: solid;
+    font-family: sans-serif;
+    alignment: center;
+    opacity: 0.4;
+    background-color: #3b3b3b;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
