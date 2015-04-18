@@ -150,7 +150,7 @@ var main = function() {
     });
 
     /*Contacto*/
-    $('.btn').click(function () {
+    $('.btn').click(function() {
         var fieldEmail = $('.emailField');
         var fieldTelefono = $('.telefonoField');
         var fieldComentario = $('.comentarioField');

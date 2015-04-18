@@ -236,42 +236,26 @@ body {
     left: 740px;
 }
 
-.contenidoSum {
-    width: 550px;
-    height: 270px;
-    background-color: #bbbcbc;
-    opacity: 0.5;
-    position: absolute;
-    top: 310px;
-    left: 680px;
-}
-
-.contenidoSum p {
-    font-size: 16px;
-    color: #381616;
-    text-align: center;
-    text-decoration: solid;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .contenidoHabitaciones {
     width: 950px;
     height: 380px;
     background-color: #bbbcbc;
-    opacity: 0.5;
+    opacity: 0.8;
     position: absolute;
-    top: 210px;
-    left: 210px;
+    top:-150px;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
 }
 
-.contenidoUbicacion {
-    background-size: contain;
-    opacity: 1;
-    position: relative;
-    horiz-align: center;
-    vertical-align: middle;
+#ubicacionMapa {
+    position: absolute;
+    top:-150px;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
 }
 
 #descripcionDeHabitacion {
@@ -287,7 +271,7 @@ body {
 
 .habitacionesImagenes {
     width: 60%;
-    height: 90%;
+    height: 95%;
     opacity: 1;
 }
 
@@ -299,7 +283,7 @@ body {
 }
 
 .habitacionesMenu {
-    width: 10%;
+    width: 17%;
     height: 100%;
     padding: 0px;
 }
@@ -309,24 +293,25 @@ body {
 }
 
 .habitacionesMenu ul {
-    padding-left: 20px;
+    padding: 20px 20px 0px 0px;
     height: inherit;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: inherit;
-    text-align: center;
+    width: 100%;
+    margin: 0;
+    border: none;
 }
 
 .contenidoHabitaciones li {
     display: block;
-    height: 25%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    height: 15%;
+    padding: 10px 10px 0px 0px;
+    margin: 0;
     text-align: center;
+    background-color: #818181;
+    width: inherit;
 }
 
 .last {
-    /*border-top: solid 1px #381616;*/
+    border-top: solid 1px #381616;
 }
 
 .contenidoHabitaciones a {
@@ -350,7 +335,7 @@ body {
 }
 
 .habitacionesDescripcion {
-    width: 30%;
+    width: 200%;
 }
 
 .fields {

@@ -26,16 +26,35 @@
 
             <div class="jumbotron" id="sum">
                 <div class="row">
-                    <div class="contenidoSum">
-                        <p>
-                            El hotel cuenta con tres salas de reuniones diseñadas para suplir necesidades de espacio para distintos eventos.
-                        </p>
-                        <p>
-                            Sus tres salas hacen placenteras las reuniones de trabajo. El auditorio Santa Maria, por ejemplo, puede albergar 90 personas y tiene varias alternativas de armado.
-                        </p>
-                        <p>
-                            Todas las salas estan equipadas con proyector digital, notebook, rotafolio, wi-fi y climatizacion.
-                        </p>
+                    <div class="contenidoHabitaciones">
+                            <div class="habitacionesMenu">
+                                <ul>
+                                    <li>
+                                        <a id="staMariaLink" href="#">Auditorio Santa Maria</a>
+                                    </li>
+
+                                    <li class="last">
+                                        <a id="ninaLink" href="#">Sala La Niña</a>
+                                    </li>
+
+                                    <li class="last">
+                                        <a id="pintaLink" href="#">Sala La Pinta</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="habitacionesImagenes">
+                                <img class="active-image image" id="autorioSantaMariaImagen" src="http://hotelcolonjunin.com.ar/standard.jpg">
+                                <img class="image" id="salaLaNinaImagen" src="http://hotelcolonjunin.com.ar/suite.jpg">
+                                <img class="image" id="salaLaPintaImagen" src="http://imagizer.imageshack.us/a/img540/7792/t4MxZs.jpg">
+                            </div>
+
+                            <div class="habitacionesDescripcion">
+                                <p id="descripcionDeSum">
+
+                                </p>
+                            </div>
                     </div>
                 </div>
 
@@ -91,28 +110,13 @@
                     </div>
 
                     <div class="habitacionesDescripcion">
-                        <p id="descripcionDeHabitacion">La habitacion standard cuenta con una cama doble, TV, baño, etc.
-                            La habitacion standard cuenta con una cama doble, TV, baño, etc.
-                            La habitacion standard cuenta con una cama doble, TV, baño, etc.
-                            La habitacion standard cuenta con una cama doble, TV, baño, etc. La
-                            habitacion standard cuenta con una cama doble, TV, baño, etc. La habitacion standard
-                            cuenta con una cama doble, TV, baño, etc. La habitacion standard cuenta con una cama doble
-                            , TV, baño, etc. La habitacion standard cuenta con una cama doble, TV, baño, etc. La
-                            habitacion standard cuenta con una cama doble, TV, baño, etc. La habitacion standard cuenta con una cama doble, TV, baño, etc.
-                            La habitacion standard cuenta con una cama doble, TV, baño, etc.
-                            La habitacion standard cuenta con una cama doble, TV, baño, etc.
-                            La habitacion standard cuenta con una cama doble, TV, baño, etc. La
-                            habitacion standard cuenta con una cama doble, TV, baño, etc. La habitacion standard
-                            cuenta con una cama doble, TV, baño, etc. La habitacion standard cuenta con una cama doble
-                            , TV, baño, etc. La habitacion standard cuenta con una cama doble, TV, baño, etc. La
-                            habitacion standard cuenta con una cama doble, TV, baño, etc. La habitacion standard cuenta con una cama doble, TV, baño, etc.
-                            La habitacion standard cuenta con una cama doble, TV, baño, etc.
-                            La habitacion standard cuenta con una cama doble, TV, baño, etc.
-                            La habitacion standard cuenta con una cama doble, TV, baño, etc. La
-                            habitacion standard cuenta con una cama doble, TV, baño, etc. La habitacion standard
-                            cuenta con una cama doble, TV, baño, etc. La habitacion standard cuenta con una cama doble
-                            , TV, baño, etc. La habitacion standard cuenta con una cama doble, TV, baño, etc. La
-                            habitacion standard cuenta con una cama doble, TV, baño, etc. </p>
+                        <p id="descripcionDeHabitacion">
+                            La habitacion standard cuenta con:
+                            - Saraza1
+                            - Saraza2
+                            - Saraza3
+                            - Saraza4
+                        </p>
                     </div>
                 </div>
             </div>
@@ -145,9 +149,9 @@
         <div class="slide" id="ubicacionSlider">
             <div class="jumbotron" id="ubicacion">
                 <div class="container">
-                    <div class="contenidoUbicacion">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.363611267605!2d-60.953920849245016!3d-34.589216605753066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x353aa3746e205203!2sHotel+Col%C3%B3n!5e0!3m2!1ses!2s!4v1427478917438" width="640" height="480" frameborder="0" style="border:0"></iframe>
-                    </div>
+
+                    <iframe id="ubicacionMapa" width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Hotel%20Col%C3%B3n%20-%20Col%C3%B3n%2C%20Jun%C3%ADn%2C%20Buenos%20Aires%2C%20Argentina&key=AIzaSyANDvMLlwfAKmXZdgWwWegwVpddRwCl7B8"></iframe>
+
                 </div>
             </div>
         </div>
@@ -162,7 +166,6 @@
         </div>
         <div class="row" id="menu">
             <ul class="pull-left">
-                <li><a href="#">|</a></li>
                 <li><a id="homeLink" href="#">Home</a></li>
                 <li><a href="#">|</a></li>
                 <li><a id="habitacionesLink" href="#">Habitaciones</a></li>
@@ -172,7 +175,6 @@
                 <li><a id="serviciosLink" href="#">Servicios</a></li>
                 <li><a href="#">|</a></li>
                 <li><a id="clientesLink" href="#">Clientes</a></li>
-                <li><a href="#">|</a></li>
             </ul>
 
             <ul class="pull-right">
@@ -180,7 +182,6 @@
                 <li><a id="ubicacionLink" href="#">Ubicacion</a></li>
                 <li><a href="#">|</a></li>
                 <li><a id="contactoLink" href="#">Contactenos</a></li>
-                <li><a href="#">|</a></li>
             </ul>
         </div>
     </div>
