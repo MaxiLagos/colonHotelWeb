@@ -1,5 +1,7 @@
 var main = function() {
 
+    /* Navegacion */
+
     $('#homeLink').click(function () {
         var currentSlide = $('.active-slide');
         var newSlide = $('#homeSlider');
@@ -15,6 +17,11 @@ var main = function() {
         currentSlide.fadeOut(600).removeClass("active-slide");
         newSlide.fadeIn(600).addClass("active-slide");
 
+        var currentImage = $('.active-image');
+        var nextImage = $('#habitacionStandardImagen');
+
+        currentImage.slideDown(300).fadeOut(100).removeClass('active-image');
+        nextImage.slideUp( 300 ).delay( 100 ).fadeIn( 400 ).addClass('active-image');
     });
 
     $('#sumLink').click(function () {
@@ -23,6 +30,12 @@ var main = function() {
 
         currentSlide.fadeOut(600).removeClass("active-slide");
         newSlide.fadeIn(600).addClass("active-slide");
+
+        var currentImage = $('.active-image');
+        var nextImage = $('#autorioSantaMariaImagen');
+
+        currentImage.slideDown(300).fadeOut(100).removeClass('active-image');
+        nextImage.slideUp( 300 ).delay( 100 ).fadeIn( 400 ).addClass('active-image');
     });
 
     $('#ubicacionLink').click(function () {
@@ -55,21 +68,34 @@ var main = function() {
 
         currentSlide.fadeOut(600).removeClass("active-slide");
         newSlide.fadeIn(600).addClass("active-slide");
+
+        newSlide.trigger("isShown")
     });
 
+    /* Servicios */
 
+    $('#serviciosSlider').bind('isShown', isShown);
 
+    function isShown() {
+        var currentImage;
+        var nextImage;
 
-/*Habitaciones*/
+        currentImage = $('.servicio-active-image');
+        nextImage = currentImage.next();
+
+        if (nextImage.length === 0) {
+            nextImage = $('.servicio-image').first();
+        }
+
+        currentImage.fadeOut(100).removeClass('servicio-active-image');
+        nextImage.slideUp(300).fadeIn(400).addClass('servicio-active-image');
+    }
+
+    /* Habitaciones */
 
     $('#suiteLink').click(function() {
         var currentImage = $('.active-image');
         var nextImage = $('#habitacionSuiteImagen');
-        var texto = $('#descripcionDeHabitacion');
-
-        texto.text("La habitacion suite cuenta con una cama doble, TV, baño, etc.");
-        //currentImage.fadeOut(600).removeClass('active-image');
-        //nextImage.fadeIn(600).addClass('active-image');
         currentImage.slideDown(300).fadeOut(100).removeClass('active-image');
         nextImage.slideUp( 300 ).delay( 100 ).fadeIn( 400 ).addClass('active-image');
     });
@@ -77,11 +103,6 @@ var main = function() {
     $('#standardLink').click(function() {
         var currentImage = $('.active-image');
         var nextImage = $('#habitacionStandardImagen');
-        var texto = $('#descripcionDeHabitacion');
-
-        texto.text("La habitacion standard cuenta con una cama doble, TV, baño, etc.");
-        //currentImage.fadeOut(600).removeClass('active-image');
-        //nextImage.fadeIn(600).addClass('active-image');
         currentImage.slideDown(300).fadeOut(100).removeClass('active-image');
         nextImage.slideUp( 300 ).delay( 100 ).fadeIn( 400 ).addClass('active-image');
     });
@@ -89,11 +110,6 @@ var main = function() {
     $('#superiorLink').click(function() {
         var currentImage = $('.active-image');
         var nextImage = $('#habitacionSuperiorImagen');
-        var texto = $('#descripcionDeHabitacion');
-
-        texto.text("La habitacion superior cuenta con una cama doble, TV, baño, etc.");
-        //currentImage.fadeOut(600).removeClass('active-image');
-        //nextImage.fadeIn(600).addClass('active-image');
         currentImage.slideDown(300).fadeOut(100).removeClass('active-image');
         nextImage.slideUp( 300 ).delay( 100 ).fadeIn( 400 ).addClass('active-image');
     });
@@ -101,55 +117,12 @@ var main = function() {
     $('#dobleLink').click(function() {
         var currentImage = $('.active-image');
         var nextImage = $('#habitacionDobleImagen');
-        var texto = $('#descripcionDeHabitacion');
-
-        texto.text("La habitacion doble cuenta con una cama doble, TV, baño, etc.");
-        //currentImage.fadeOut(600).removeClass('active-image');
-        //nextImage.fadeIn(600).addClass('active-image');
         currentImage.slideDown(300).fadeOut(100).removeClass('active-image');
         nextImage.slideUp( 300 ).delay( 100 ).fadeIn( 400 ).addClass('active-image');
     });
 
-    $('.arrow-next').click(function() {
-        var currentSlide = ('.active-subSlide');
-        var nextSlide = currentSlide.next();
-
-        var currentDot = ('.active-dot');
-        var nextDot = currentDot.next();
-
-        if(nextSlide.length === 0) {
-            nextSlide = ('.subSlide').first();
-            nextDot = ('.dot').first();
-        }
-
-        currentSlide.fadeOut(600).removeClass('active-subSlide');
-        nextSlide.fadeIn(600).addClass('active-subSlide');
-
-        currentDot.removeClass('active-dot');
-        nextDot.addClass('active-dot');
-    });
-
-
-    $('.arrow-prev').click(function() {
-        var currentSlide = $('.active-subSlide');
-        var prevSlide = currentSlide.prev();
-
-        var currentDot = $('.active-dot');
-        var prevDot = currentDot.prev();
-
-        if(prevSlide.length === 0) {
-            prevSlide = ('.subSlide').last();
-            prevDot = ('.dot').last();
-        }
-
-        currentSlide.fadeOut(600).removeClass('active-subSlide');
-        prevSlide.fadeIn(600).addClass('active-subSlide');
-
-        currentDot.removeClass('active-dot');
-        prevDot.addClass('active-dot');
-    });
-
     /*Contacto*/
+
     $('.btn').click(function() {
         var fieldEmail = $('.emailField');
         var fieldTelefono = $('.telefonoField');
@@ -162,6 +135,32 @@ var main = function() {
         fieldComentario.val('');
 
     })
+
+    /* Eventos */
+
+    $('#staMariaLink').click(function() {
+        var currentImage = $('.active-image');
+        var nextImage = $('#autorioSantaMariaImagen');
+
+        currentImage.slideDown(300).fadeOut(100).removeClass('active-image');
+        nextImage.slideUp( 300 ).delay( 100 ).fadeIn( 400 ).addClass('active-image');
+    });
+
+    $('#ninaLink').click(function() {
+        var currentImage = $('.active-image');
+        var nextImage = $('#salaLaNinaImagen');
+
+        currentImage.slideDown(300).fadeOut(100).removeClass('active-image');
+        nextImage.slideUp( 300 ).delay( 100 ).fadeIn( 400 ).addClass('active-image');
+    });
+
+    $('#pintaLink').click(function() {
+        var currentImage = $('.active-image');
+        var nextImage = $('#salaLaPintaImagen');
+
+        currentImage.slideDown(300).fadeOut(100).removeClass('active-image');
+        nextImage.slideUp( 300 ).delay( 100 ).fadeIn( 400 ).addClass('active-image');
+    });
 
 }
 
