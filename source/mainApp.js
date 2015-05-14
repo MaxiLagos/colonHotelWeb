@@ -74,40 +74,45 @@ var main = function() {
 
     /* Servicios */
 
-    //$('#serviciosSlider').bind('isShown', isShown);
-    //
-    //function isShown() {
-    //    var currentImage;
-    //    var nextImage;
-    //
-    //    currentImage = $('.servicio-active-image');
-    //    nextImage = currentImage.next();
-    //
-    //    if (nextImage.length === 0) {
-    //        nextImage = $('.servicio-image').first();
-    //    }
-    //
-    //    currentImage.fadeOut(100).removeClass('servicio-active-image');
-    //    nextImage.slideUp(300).fadeIn(400).addClass('servicio-active-image');
-    //}
-
-
-
-    $('#serviciosLink').focusin(function () {
+    $('.arrow-prev').click(function () {
         var currentImage;
-        var nextImage;
+        var previuosImage;
 
-        while(true) {
-            currentImage = $('.servicio-active-image');
-            nextImage = currentImage.next();
+        var currentDot = $('.active-dot');
+        var prevDot = currentDot.prev();
 
-            if (nextImage.length === 0) {
-                nextImage = $('.servicio-image').first();
-            }
+        currentImage = $('.servicio-active-image');
+        previuosImage = currentImage.prev();
 
-            currentImage.fadeOut(100).removeClass('servicio-active-image');
-            nextImage.slideUp(300).fadeIn(400).addClass('servicio-active-image');
+        if (previuosImage.length === 0) {
+            previuosImage = $('.servicio-image').last();
+            prevDot = $('.dot').last();
         }
+
+        currentImage.removeClass('servicio-active-image');
+        previuosImage.addClass('servicio-active-image');
+
+        currentDot.removeClass('active-dot');
+        prevDot.addClass('active-dot');
+    });
+
+    $('.arrow-next').click(function () {
+        var currentImage = $('.servicio-active-image');
+        var nextImage = currentImage.next();
+
+        var currentDot = $('.active-dot');
+        var nextDot = currentDot.next();
+
+        if (nextImage.length === 0) {
+            nextImage = $('.servicio-image').first();
+            nextDot = $('.dot').first();
+        }
+
+        currentImage.removeClass('servicio-active-image');
+        nextImage.addClass('servicio-active-image');
+
+        currentDot.removeClass('active-dot');
+        nextDot.addClass('active-dot');
     });
 
     /* Habitaciones */
