@@ -74,22 +74,41 @@ var main = function() {
 
     /* Servicios */
 
-    $('#serviciosSlider').bind('isShown', isShown);
+    //$('#serviciosSlider').bind('isShown', isShown);
+    //
+    //function isShown() {
+    //    var currentImage;
+    //    var nextImage;
+    //
+    //    currentImage = $('.servicio-active-image');
+    //    nextImage = currentImage.next();
+    //
+    //    if (nextImage.length === 0) {
+    //        nextImage = $('.servicio-image').first();
+    //    }
+    //
+    //    currentImage.fadeOut(100).removeClass('servicio-active-image');
+    //    nextImage.slideUp(300).fadeIn(400).addClass('servicio-active-image');
+    //}
 
-    function isShown() {
+
+
+    $('#serviciosLink').focusin(function () {
         var currentImage;
         var nextImage;
 
-        currentImage = $('.servicio-active-image');
-        nextImage = currentImage.next();
+        while(true) {
+            currentImage = $('.servicio-active-image');
+            nextImage = currentImage.next();
 
-        if (nextImage.length === 0) {
-            nextImage = $('.servicio-image').first();
+            if (nextImage.length === 0) {
+                nextImage = $('.servicio-image').first();
+            }
+
+            currentImage.fadeOut(100).removeClass('servicio-active-image');
+            nextImage.slideUp(300).fadeIn(400).addClass('servicio-active-image');
         }
-
-        currentImage.fadeOut(100).removeClass('servicio-active-image');
-        nextImage.slideUp(300).fadeIn(400).addClass('servicio-active-image');
-    }
+    });
 
     /* Habitaciones */
 
