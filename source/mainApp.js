@@ -148,16 +148,9 @@ var main = function() {
     /*Contacto*/
 
     $('.btn').click(function() {
-        var fieldEmail = $('.emailField');
-        var fieldTelefono = $('.telefonoField');
-        var fieldComentario = $('.comentarioField');
-        var email = fieldEmail.getText();
-        var telefono = fieldTelefono.getText();
-        var comentario = fieldComentario.getText();
-        fieldEmail.val('');
-        fieldTelefono.val('');
-        fieldComentario.val('');
-
+        $('.emailField').val('');
+        $('.telefonoField').val('');
+        $('.comentarioField').val('');
     })
 
     /* Eventos */

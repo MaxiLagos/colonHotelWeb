@@ -14,7 +14,6 @@
 <body>
 
 <div class="slider">
-
         <div class="slide active-slide" id="homeSlider">
                 <div class="jumbotron" id="home">
 
@@ -72,12 +71,14 @@ Las salas cuentan con:<br/>
         <div class="slide" id="contactoSlider">
 
             <div class="jumbotron" id="contacto">
-                <div class="contenido">
-                    <textarea class="emailField fields" rows="1" placeholder="Email"></textarea>
-                    <textarea class="telefonoField fields" rows="1" placeholder="Telefono"></textarea>
-                    <textarea class="comentarioField fields" rows="6" placeholder="Comentario"></textarea>
-                    <a href="#" class="btn btn-primary">Enviar</a>
-                </div>
+                <form action="mailService.php" method="post">
+                    <div class="contenido">
+                        <input type="text" class="emailField fields" rows="1" placeholder="Email" name="email">
+                        <input type="text" class="telefonoField fields" rows="1" placeholder="Telefono" name="telefono">
+                        <textarea class="comentarioField fields" rows="6" placeholder="Comentario" name="mensaje"></textarea>
+                        <input type="submit" class="btn btn-primary" value="Enviar">
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -253,7 +254,6 @@ Ademas el hotel ofrece los siguientes servicios:<br/>
                 </div>
             </div>
         </div>
-
 </div>
 
 <div class="nav">
@@ -289,8 +289,13 @@ Ademas el hotel ofrece los siguientes servicios:<br/>
 
 </div>
 
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="mainApp.js"></script>
+    <script language="JavaScript" src="mailService.php"></script>
+
 
 </body>
 </html>
+
+
