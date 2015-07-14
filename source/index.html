@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <link href="shift.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script type="text/javascript" src="js/prototype.js"></script>
+    <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Hotel Colon Junin</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
@@ -20,7 +26,24 @@
                 </div>
             </div>
 
-        <div class="slide" id="sumSlider">
+    <div class="slide" id="nuestraSlider">
+        <div class="jumbotron" id="nuestra">
+
+
+            <div class="contenido2">
+                <div class="nuestraDescripcion">
+                <p>
+                    EL HOTEL COLON es un hotel de lujo, emplazado en un antiguo almacén de ramos generales construido por el año 1880, la casona (perteneciente a la familia de sus dueños) conserva el espíritu arquitectónico original con rasgos de un auténtico edificio de época. La idea de hacer un Hotel por parte de sus dueños se debió a la demanda que había en la ciudad, para pasajeros exigentes que buscaban comodidad y servicios. Se aprovechó estratégicamente el lugar, retirado del centro comercial (cuatro cuadras), para asegurar el descanso de sus huéspedes convirtiéndolo en un lugar de privilegio.
+                    Sus tres salas hacen placenteras las reuniones de trabajo. En su quincho el huesped puede realizar comidas en su asador o bien en el horno de barro.
+                    Los interiores fueron reciclados y finamente decorados en colores pastel y sus pisos de madera hacen a la calidez del ambiente. Los pasillos presentan cuadros pertenecientes a la familia, lo mismo que la araña que ilumina el lobby.
+                    </p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slide" id="sumSlider">
 
             <div class="jumbotron" id="sum">
                 <div class="row">
@@ -32,7 +55,7 @@
                                     </li>
 
                                     <li class="last">
-                                        <a id="ninaLink" href="#">Sala La Ni�a</a>
+                                        <a id="ninaLink" href="#">Sala La Niña</a>
                                     </li>
 
                                     <li class="last">
@@ -43,14 +66,14 @@
                             </div>
 
                             <div class="habitacionesImagenes">
-                                <img class="active-image image" id="autorioSantaMariaImagen" src="http://imagizer.imageshack.us/a/img909/2117/rdWbNG.jpg">
-                                <img class="image" id="salaLaNinaImagen" src="http://imagizer.imageshack.us/a/img905/6494/gYfXZq.jpg">
-                                <img class="image" id="salaLaPintaImagen" src="http://imagizer.imageshack.us/a/img909/8306/TDOJDi.jpg">
+                                <img class="active-image image" id="autorioSantaMariaImagen" src="casamiento fernando 101.jpg">
+                                <img class="image" id="salaLaNinaImagen" src="casamiento fernando 151.jpg">
+                                <img class="image" id="salaLaPintaImagen" src="31329280.jpg">
                             </div>
 
                             <div class="habitacionesDescripcion">
                                 <p>
-El hotel cuenta con tres salas de reuniones dise�adas para suplir sus necesidades de espacio para distintos eventos<br/>
+El Hotel cuenta con tres salas de reuniones diseñadas para suplir sus necesidades de espacio para distintos eventos<br/>
 <br/>
 Las salas cuentan con:<br/>
 <br/>
@@ -73,14 +96,16 @@ Las salas cuentan con:<br/>
             <div class="jumbotron" id="contacto">
                 <form action="mailService.php" method="post">
                     <div class="contenido">
-                        <input type="text" class="emailField fields" rows="1" placeholder="Email" name="email">
+                        <input type="email" class="emailField fields" rows="1" placeholder="Email" name="email">
                         <input type="text" class="telefonoField fields" rows="1" placeholder="Telefono" name="telefono">
+                        <input type="text" class="telefonoField fields" rows="1" placeholder="Nombre y Apellido" name="nombre">
                         <textarea class="comentarioField fields" rows="6" placeholder="Comentario" name="mensaje"></textarea>
                         <input type="submit" class="btn btn-primary" value="Enviar">
                     </div>
                 </form>
             </div>
         </div>
+
 
         <div class="slide" id="habitacionesSlider">
             <div class="jumbotron" id="habitaciones">
@@ -108,21 +133,26 @@ Las salas cuentan con:<br/>
                     </div>
 
                     <div class="habitacionesImagenes">
-                        <img class="active-image image" id="habitacionStandardImagen" src="http://hotelcolonjunin.com.ar/standard.jpg">
-                        <img class="image" id="habitacionSuiteImagen" src="http://hotelcolonjunin.com.ar/suite.jpg">
-                        <img class="image" id="habitacionSuperiorImagen" src="http://imagizer.imageshack.us/a/img540/7792/t4MxZs.jpg">
-                        <img class="image" id="habitacionDobleImagen" src="http://imagizer.imageshack.us/a/img537/2720/S3687q.jpg">
+                        <img class="active-image image" id="habitacionStandardImagen" src="hotel colon.jpg">
+                        <img class="image" id="habitacionSuiteImagen" src="suiterec.jpg">
+                        <img class="image" id="habitacionSuperiorImagen" src="hotel colon (35).jpg">
+                        <img class="image" id="habitacionDobleImagen" src="depto2.jpg">
                     </div>
 
                     <div class="habitacionesDescripcion">
                         <p>
-Las habitaciones poseen:<br/>
+Nuestro Hotel cuenta con 21 habitaciones, las mismas poseen:<br/>
 <br/>
-- TV<br/>
-- Internet<br/>
-- Ba�o en suite<br/>
+- TV LCD 32"<br/>
+- Internet por cable/WIFI<br/>
+- Baño en suite<br/>
 - Room service<br/>
-- Aire acondicionado frio/calor
+- Aire acondicionado frio/calor<br/>
+- FrigoBar<br/>
+- Servicio de Lavanderia<br/>
+- Teléfono<br/>
+- Amenities<br/>
+
                         </p>
                     </div>
                 </div>
@@ -138,29 +168,47 @@ Las habitaciones poseen:<br/>
 
                             <div class="serviciosDescripcion">
                                 <p>
-Ademas el hotel ofrece los siguientes servicios:<br/>
+Nuestro Hotel cuenta con una serie de servicios para ser más agradable su estadia:<br/>
 <br/>
 - Piscina<br/>
 - Bar las 24 hs<br/>
-- Quincho con parrilla<br/>
+- Quincho con Parrilla<br/>
 - Gym<br/>
-- Box privado de internet<br/>
+- Box Privado de Internet<br/>
+                                    - Cochera Privada y Cubierta<br/>
+                                    - Wifi<br/>
                                 </p>
-                            </div>
+                                   </div>
 
-                            <div class="serviciosImagenes">
-                                <img class="servicio-active-image servicio-image" id="barImagen" src="http://imagizer.imageshack.us/a/img537/1292/mVpwKT.jpg">
-                                <img class="servicio-image" id="piletaImagen" src="http://imagizer.imageshack.us/a/img538/1959/Z1atXZ.jpg">
-                                <img class="servicio-image" id="quinchoImagen" src="http://imagizer.imageshack.us/a/img908/3221/O30XtW.jpg">
-                                <img class="servicio-image" id="quincho2Imagen" src="http://imagizer.imageshack.us/a/img540/8103/TRUJcD.jpg">
-                                <img class="servicio-image" id="gymImagen" src="http://imagizer.imageshack.us/a/img538/9018/Thpbkh.jpg">
-                            </div>
+                                 <div class="main">
+                                      <div class="slides">
+                                       <!--   <img class="servicio-image" id="piletaImagen" src="hotel colon (20).jpg">
+                                     <img class="servicio-image" id="quinchoImagen" src="hotel colon (30).jpg">
+                                     <img class="servicio-image" id="quincho2Imagen" src="Gimnasio.jpg">-->
 
-                            <div class="slider-nav">
+
+                                     <!--</div>-->
+                                     <!--<img class="servicio-active-image servicio-image" id="barImagen" src="http://imagizer.imageshack.us/a/img537/1292/mVpwKT.jpg">-->
+                                     <img class="servicio-image" id="piletaImagen" src="hotel colon (20).jpg">
+                                     <img class="servicio-image" id="quinchoImagen" src="hotel colon (16).jpg">
+                                     <img class="servicio-image" id="quincho2Imagen" src='foto pileta5.jpg'>
+                                     <img class="servicio-image" id="gymImagen" src="Gimnasio.jpg">
+                                     <img class="servicio-image" id="gymImagen" src="casamiento fernando 025.jpg">
+                                          <img class="servicio-image" id="gymImagen" src="Quincho 2.jpg">
+                                          <img class="servicio-image" id="gymImagen" src="pasillorec.jpg">
+                                           <!--  <img src="hotel colon (20)" alt="">
+                                             <img src="hotel colon (30).jpg" alt="">-->
+</div>
+</div>
+
+
+                           <div class="slider-nav">
                                 <a href="#" class="arrow-prev"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png"></a>
 
                                 <ul class="slider-dots">
                                     <li class="dot active-dot">&bull;</li>
+                                    <li class="dot">&bull;</li>
+                                    <li class="dot">&bull;</li>
                                     <li class="dot">&bull;</li>
                                     <li class="dot">&bull;</li>
                                     <li class="dot">&bull;</li>
@@ -179,7 +227,7 @@ Ademas el hotel ofrece los siguientes servicios:<br/>
             <div class="jumbotron" id="clientes">
                 <div class="container">
                     <div class="contenidoClientes">
-                        <p>Ellos ya confiaron en nosotros:<br/>
+                        <p>Empresas que confiaron en Nosotros:<br/>
                             <br/>
                         - NIDERA<br/>
                         - MONSANTO<br/>
@@ -215,36 +263,60 @@ Ademas el hotel ofrece los siguientes servicios:<br/>
                         - ACINDAR<br/>
                         - DURLOCK<br/>
                         - MASTELLONE<br/>
-                        - ALDOSIVI<br/>
-                        - ALL BOYS<br/>
-                        - ARSENAL<br/>
-                        - ATLETICO TUCUMAN<br/>
-                        - BANFIELD<br/>
-                        - BELGRANO DE CORDOBA<br/>
-                        - BOCA JUNIORS<br/>
-                        - CRUCERO DEL NORTE<br/>
-                        - DEFENSA Y JUSTICIA<br/>
-                        - ESTUDIANTES DE SAN LUIS<br/>
-                        - GIMNASIA Y ESGRIMA DE JUJUY<br/>
-                        - GIMNASIA Y ESGRIMA LA PLATA<br/>
-                        - HURACAN<br/>
-                        - INDEPENDIENTE RIVADAVIA DE MENDOZA<br/>
-                        - INSTITUTO<br/>
-                        - NUEVA CHICAGO<br/>
-                        - OLIMPO<br/>
-                        - PATRONATO<br/>
-                        - RAFAELA<br/>
-                        - SAN MARTIN DE SAN JUAN<br/>
-                        - SARMIENTO<br/>
-                        - TALLERES DE CORDOBA<br/>
-                        - TEMPERLEY<br/>
-                        - MONTE HERMOSO<br/>
+                    </div>
+                    < class="jumbotron" id="clientes">
+                    <div class="container">
+                       <div class="contenidoClientesA">
+                          <p>Entidades Deportívas que confiaron en Nosotros:<br/>
+                            <br/>
+                            - ALDOSIVI<br/>
+                            - ALL BOYS<br/>
+                            - ARGENTINOS JUNIORS<br/>
+                            - ARSENAL<br/>
+                            - ATLETICO RAFAELA<br/>
+                            - ATLETICO TUCUMAN<br/>
+                            - BANFIELD<br/>
+                            - BELGRANO DE CORDOBA<br/>
+                            - BOCA UNIDOS<br/>
+                            - CRUCERO DEL NORTE<br/>
+                            - DEFENSA Y JUSTICIA<br/>
+                            - ESTUDIANTES DE SAN LUIS<br/>
+                            - GIMNASIA Y ESGRIMA DE JUJUY<br/>
+                            - GIMNASIA Y ESGRIMA LA PLATA<br/>
+                            - HURACAN<br/>
+                            - INDEPENDIENTE RIVADAVIA DE MENDOZA<br/>
+                            - INSTITUTO DE CORDOBA<br/>
+                            - NUEVA CHICAGO<br/>
+                            - OLIMPO DE BAHIA BLANCA<br/>
+                            - PATRONATO<br/>
+                            - SAN MARTIN DE SAN JUAN<br/>
+                            - SARMIENTO DE JUNIN<br/>
+                            - TALLERES DE CORDOBA<br/>
+                            - TEMPERLEY<br/>
+                            - MONTE HERMOSO<br/>
                         </p>
+                    </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
 
+
+
+<div class="slide" id="galeriaSlider">
+    <div class="jumbotron" id="galeria">
+
+
+        <div class="contenido2">
+            <div class="nuestraDescripcion">
+<h1>Galeria de Imagenes</h1>
+            <div class="miniatura">
+            </div>
+        </div>
+            </div>
+    </div>
+</div>
         <div class="slide" id="ubicacionSlider">
             <div class="jumbotron" id="ubicacion">
                 <div class="container">
@@ -266,6 +338,8 @@ Ademas el hotel ofrece los siguientes servicios:<br/>
             <ul class="pull-left">
                 <li><a id="homeLink" href="#">Home</a></li>
                 <li><a href="#">|</a></li>
+                <li><a id="nuestraLink" href="#">Quienes Somos</a></li>
+                <li><a href="#">|</a></li>
                 <li><a id="habitacionesLink" href="#">Habitaciones</a></li>
                 <li><a href="#">|</a></li>
                 <li><a id="sumLink" href="#">Eventos</a></li>
@@ -273,26 +347,57 @@ Ademas el hotel ofrece los siguientes servicios:<br/>
                 <li><a id="serviciosLink" href="#">Servicios</a></li>
                 <li><a href="#">|</a></li>
                 <li><a id="clientesLink" href="#">Clientes</a></li>
+                <!--<li><a href="#">|</a></li>
+                <li><a id="galeriaLink" href="#">Galeria</a></li>-->
             </ul>
 
             <ul class="pull-right">
                 <li>|</li>
                 <li><a id="ubicacionLink" href="#">Ubicacion</a></li>
                 <li><a href="#">|</a></li>
-                <li><a id="contactoLink" href="#">Contactenos</a></li>
+                <li><a id="contactoLink" href="#">Contacto</a></li>
             </ul>
         </div>
     </div>
 </div>
 
-<div class="footer">Hotel colon junin / Colon 144, Junin / Buenos aires, argentina //// Telefonos: (0236) 442-2033 | 442-1738 | 442-1597
-
+<div class="footer">HOTEL COLON JUNIN / Colón 144, Junín / Buenos Aires, Argentina //// Teléfonos: (0236) 442-2033 | 442-1738 | 463-2000  | 463-2001  - info@hotelcolonjunin.com.ar
 </div>
 
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="mainApp.js"></script>
-    <script language="JavaScript" src="mailService.php"></script>
+<script src="js/jquery.slides.js"></script>
+<script src="js/jquery.slides.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="mainApp.js"></script>
+<script language="JavaScript" src="mailService.php"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script>
+    $(function(){
+        $(".slides").slidesjs({
+            play: {
+                active: true,
+                    [boolean] Generate the play and stop buttons.
+                    You cannot use your own buttons. Sorry.
+                effect: "slide",
+                [string] Can be either "slide" or "fade".
+                interval: 3000,
+                [number] Time spent on each slide in milliseconds.
+                auto: true,
+                [boolean] Start playing the slideshow on load.
+                swap: true,
+                [boolean] show/hide stop and play buttons
+        pauseOnHover: false,
+                [boolean] pause a playing slideshow on hover
+        restartDelay: 2500
+                [number] restart delay on inactive slideshow
+    }
+        });
+    });
+
+</script>
+
+
 
 
 </body>

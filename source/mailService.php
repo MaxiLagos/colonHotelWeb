@@ -1,12 +1,10 @@
 <?php
 
-    $emailDestino = "info@hotelcolonjunin.com.ar";
-    $emailOrigen = "From:" . $_POST['email'];
-    $subject = "Nueva consulta ingresada. Telefono: " . $_POST['telefono'];
+    $destino = "info@hotelcolonjunin.com.ar";
+    $desde = $_POST['email'];
+    $subject = "Nueva consulta ingresada: " . $_POST['nombre'] . "-" . $_POST['telefono'];
     $mensaje = $_POST['mensaje'];
-
-    $resultado = mail($emailDestino, $subject, $mensaje, $emailOrigen);
-
+    mail($destino, $subject, $mensaje, $desde);
     echo '<p>Gracias por enviarnos su consulta. En breve nos comunicaremos con usted</p><a href="index.html">Click para ir a nuestro sitio</a>';
 
 ?>
